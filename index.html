@@ -1,107 +1,197 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-
-        <!--[if lt IE 9]>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="Bookmarks">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    
+    .image_link_wrapper {
+        width: 15%;
+        padding: 10px;
+        float: left;
+    }
+    
+    .image_link_wrapper .image_link img {
+        width: 100%;
+    }
+    
+    ul li {
+        list-style-position: inside;
+        clear: left;
+    }
+    
+    ul li a {
+        font-family: sans-serif;
+        color: #001b41;
+        text-decoration: none;
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+    </style>
+    <!--[if lt IE 9]>
             <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
         <![endif]-->
-    </head>
-    <body>
-        <!--[if lt IE 8]>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bookmarks</a>
+            </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
     </nav>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
     <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>General links</h2>
+                <div class="image_link_wrapper">
+                    <a href="http://osapps.bju.edu/clocker2" class="image_link" target="_blank" title="Clocker">
+                        <img src="icons/Clocker.png" />
+                    </a>
+                </div>
+                <div class="image_link_wrapper">
+                    <a href="https://bobjonesuniversity.teamwork.com/projects/" class="image_link" target="_blank" title="Teamwork Timer">
+                        <img src="icons/TeamworkTimer.png" />
+                    </a>
+                </div>
+                <div class="image_link_wrapper">
+                    <a href="https://directory.bju.edu/Main.aspx" class="image_link" target="_blank" title="Campus Directory">
+                        <img src="icons/Campus Directory.jpg" />
+                    </a>
+                </div>
+                <div class="image_link_wrapper">
+                    <a href="https://jira.bju.edu" class="image_link" target="_blank" title="JIRA">
+                        <img src="icons/JIRA.png" />
+                    </a>
+                </div>
+                <div class="image_link_wrapper">
+                    <a href="https://support.bju.edu" class="image_link" target="_blank" title="FootPrints">
+                        <img src="icons/FootPrints.png" />
+                    </a>
+                </div>
+                <div class="image_link_wrapper">
+                    <a href="http://bjupayroll.bju.edu" class="image_link" target="_blank" title="Ultipro">
+                        <img src="icons/Ultipro.jpg" />
+                    </a>
+                </div>
+                <div class="image_link_wrapper">
+                    <a href="http://svn.bju.edu/repos/bsd/" class="image_link" target="_blank" title="BJU SVN Repository">
+                        <img src="icons/SVN.jpg" />
+                    </a>
+                </div>
+                <div class="image_link_wrapper">
+                    <a href="http://svn.bju.edu/repos/bsd/wsced/trunk/workspace/" class="image_link" target="_blank" title="WC SVN Repository">
+                        <img src="icons/SVN.jpg" />
+                    </a>
+                </div>
+                <div class="image_link_wrapper">
+                    <a href="http://www.lynda.com/member" class="image_link" target="_blank" title="Lynda.com">
+                        <img src="icons/Lynda.jpg" />
+                    </a>
+                </div>
+                <div class="image_link_wrapper">
+                    <a href="http://osappslifetime.bju.edu" class="image_link" target="_blank" title="OSAppsLifetime">
+                        <img src="icons/OutSystems.png" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Reference</h2>
+                <div class="image_link_wrapper">
+                    <a href="http://brand.bju.edu" class="image_link" target="_blank" title="BJU Brand">
+                        <img src="icons/Brand.png" />
+                    </a>
+                </div>
+                <div class="image_link_wrapper">
+                    <a href="https://protect.bju.edu/wiki/dashboard.action" class="image_link" target="_blank" title="BJU Wiki">
+                        <img src="icons/Confluence.png" />
+                    </a>
+                </div>
+                <div class="image_link_wrapper">
+                    <a href="http://fortawesome.github.io/Font-Awesome/icons/" class="image_link" target="_blank" title="Font Awesome Icons">
+                        <img src="icons/FontAwesome.png" />
+                    </a>
+                </div>
+                <div class="image_link_wrapper">
+                    <a href="http://www.outsystems.com/help/servicestudio/9.0/default.htm#Language_Reference/Built_in_Functions/Overview_of_Built-in_Functions.htm" class="image_link" target="_blank" title="OutSystems Built-in Functions">
+                        <img src="icons/OutSystems.png" />
+                    </a>
+                </div>
+                <div class="image_link_wrapper">
+                    <a href="https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all" class="image_link" target="_blank" title="JIRA Wiki Syntax">
+                        <img src="icons/JIRA.png" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Documentation</h2>
+                <ul>
+                    <li><a href="https://protect.bju.edu/wiki/display/wcs/Debug+Control+Panel" target="_blank">Wiki - Debug Control Panel</a></li>
+                    <li><a href="https://protect.bju.edu/wiki/display/wcmigr/DBSchema" target="_blank">Wiki - DBSchema</a></li>
+                    <li><a href="https://protect.bju.edu/wiki/display/wcs/Date+Input+Formats" target="_blank">Wiki - Date Input Formats</a></li>
+                    <li><a href="https://protect.bju.edu/wiki/display/wcs/WCS+Roles" target="_blank">Wiki - WCS Roles</a></li>
+                    <li><a href="https://protect.bju.edu/wiki/display/wcs/Order+Entry" target="_blank">Wiki - Order Entry</a></li>
+                    <li><a href="https://protect.bju.edu/wiki/display/wcs/WCS+Version+History" target="_blank">Wiki - WCS Version History</a></li>
+                    <li><a href="https://protect.bju.edu/wiki/display/wcs/Order+Lifecycle" target="_blank">Wiki - Order Lifecycle</a></li>
+                    <li><a href="https://protect.bju.edu/wiki/display/wcs/Payment+Plan+Lifecycle" target="_blank">Wiki - Payment Plan Lifecycle</a></li>
+                    <li><a href="https://protect.bju.edu/wiki/display/wcs/Interface+Process+Documentation" target="_blank">Wiki - Interface Process Documentation</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
+        <hr>
+        <footer>
+            <p>&copy; Fredy Whatley 2015</p>
+        </footer>
+    </div>
+    <!-- /container -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+    (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function() {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+    </script>
+</body>
 
-      <hr>
-
-      <footer>
-        <p>&copy; Fredy Whatley 2015</p>
-      </footer>
-    </div> <!-- /container -->        
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
 </html>
